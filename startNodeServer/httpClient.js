@@ -1,7 +1,7 @@
 var http = require('http');
-var inputPath = process.argv[2]
+var addr = process.argv[2]
 
-http.get(inputPath,function callback(res) {
+http.get(addr,function callback(res) {
     res.setEncoding('utf8');
     res.on('data',function(chunk){
         console.log(chunk)
